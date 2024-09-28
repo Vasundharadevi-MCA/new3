@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    background: #f0f3fd;
+    color: #333;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7px;
+    background: rgb(186, 236, 186);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size:25px;
+    color: #333;
+    font-weight: 600;
+    margin-right:auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a  {
+    font-size: 18px;
+    color:#050505;
+    font-weight: 500;
+    margin-right: 75px;
+    transition: .5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:#e80303
+}
+.toggle-icon{
+    display: flex;
+    font-size: 24px;
+    cursor:pointer;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10% 0;
+    background: url("https://img.freepik.com/premium-photo/dark-charcoal-grey-background-with-subtle-textures-dark-background-design-dark-texture-wallpaper_1020697-707706.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    line-height: 1.2;
+    color: #ed093a;
+}
+.home-content h3{
+    font-size: 32px;
+    color: white;
+}
+.home-content h3 span{
+    color: #37a1f2;
+}
+.home-content p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin: 15px 0;
+    color: white;
+}
+.home-content {
+    position: relative;
+    animation: slideIn 1.3s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #4ba7e4;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 20px;
+    color: #37a1f2;
+    margin: 5px 15px 25px 0;
+    transition: .5s;
+}
+.social-media a:hover{
+    background: #37a1f2;
+    color: #f0f3fd;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 32px;
+    background: #ed093a;
+    border: 2px solid #ed093a;
+    border-radius:  40px;
+    box-shadow: 0 0 10px #0e0e0e;
+    font-size: 16px;
+    color: #f0f3fd;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #ee0d49;
+}
+.home-img img{
+    position: absolute;
+    bottom: 90px;
+    right: 250px;
+    width: 350px;
+    box-shadow: 0 0 5px rgb(247, 246, 246);
+    pointer-events: none;
+    border-radius: 60%;
+    animation: slideIn 1.3s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 8%;
+        gap:10em;
+        background: url("https://img.freepik.com/premium-photo/dark-charcoal-grey-background-with-subtle-textures-dark-background-design-dark-texture-wallpaper_1020697-707706.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .about-img img{
+        position: relative;
+        width: 350px;
+        box-shadow: 0 0 20px rgb(239, 205, 192),
+                    0 0 40px rgb(254, 190, 167);
+        border-radius:50%;
+        animation: slideIn 2.5s ease-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    .about-content h2{
+        text-align: left;
+        color: white;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .about-content h3{
+        font-size: 50px;
+        color:rgb(24, 239, 232);
+    }
+    .about-content p{
+        color: white;
+        font-size: 20px;
+        margin: 2em 0 3em;
+    }
+    .about-content {
+        position: relative;
+        animation: slideIn 2.5s ease-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+/* Skills Section */
+.skills-section {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 130px 20px;
+    color: white;
+    height: 100hv;
+    background: url("https://img.freepik.com/premium-photo/dark-charcoal-grey-background-with-subtle-textures-dark-background-design-dark-texture-wallpaper_1020697-707706.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.skills-section .heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #0ef;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #0f0f0f;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 5px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #ca0eef;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+.skill-item:nth-child(2) .skill-progress {
+    background-color: #1abc9c;
+}
+
+.skill-item:nth-child(3) .skill-progress {
+    background-color: #f1c40f;
+}
+
+.skill-item:nth-child(4) .skill-progress {
+    background-color: #d80820;
+}
+
+.animated-paragraph{
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeIn 3s forwards; /* Apply the animation */
+}
+.animated-paragraph{
+    font-size:20px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+.project {
+    padding: 100px;
+    color:white;
+    max-width: 100%;
+    height: 100vh;
+    background: url("https://img.freepik.com/premium-photo/dark-charcoal-grey-background-with-subtle-textures-dark-background-design-dark-texture-wallpaper_1020697-707706.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project-container {
+            display: flex; /* Align boxes side by side */
+            justify-content: space-around; /* Evenly space boxes */
+            flex-wrap: wrap;
+            gap:20px;
+           flex-direction:row;
+   }
+.project h2{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 50px;
+}
+
+.project-box {
+                border: 1px solid transparent; /* No visible border */
+                border-radius: 8px;
+                padding: 100px;
+                text-align: center;
+                width: 100%; /* Adjust width as needed */
+                max-width: 500px; /* Optional: limit maximum width */
+                box-shadow: 10px 10px 10px 10px rgb(220, 14, 55); /* Blue shadow */
+                flex:1 1 calc(30%-20%); /* Center text in the box */
+            }
+
+.project-box h3 {
+                margin-bottom: 10px 0;
+            }
+.project-box a {
+                display: inline-block;
+                margin-top: 2px;
+                padding: 4px 10px;
+                background-color: #007bff; /* Button color */
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+.project-box a:hover {
+                background-color: #0056b3;
+                text-decoration: underline;
+
+
+            }
+
+
+.project-box {
+            border: 1px solid transparent; /* No visible border */
+            border-radius: 15px;
+            padding: 20px;
+            width: 30%; /* Adjust width as needed */
+            max-width: 300px; /* Optional: limit maximum width */
+            box-shadow: #0ef; /* Blue shadow */
+            text-align: center; /* Center text in the box*/
+        }
+
+.project-box h3 {
+            margin: 10px 0;
+color:white;
+        }
+
+.project-box a {
+            display: inline-block;
+            margin-bottom: 2px;
+            padding: 10px 20px;
+            background-color: #007bff; /* Button color */
+color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+.project-box a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+
+
+.contact{
+    background-color: #131313;
+    padding-top: 130px;
+    height: 100hv;
+    background: url("https://www.shutterstock.com/image-vector/black-modern-vector-background-overlap-260nw-1796168857.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact h2{
+    margin-bottom: 3px;
+    text-align: center;
+    color: #f6f2f2;
+    font-size: 40px;
+}
+.contact form{
+    max-width: 40rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom:3rem;
+    border-color: #70f3ec;
+    border-radius: 500px;
+}
+.contact form .input-box{
+    display: flex;
+    color: #f6f2f2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .4rem 0;
+}
+.contact form .input-box input{
+    width:49%;
+}
+#dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(18, 18, 18);
+    color: white;
+    padding: 20px;
+    border: 1px solid #70f3ec;
+    border-radius: 10px;
+    z-index: 1000;
+}
+#dialog button {
+    margin-top: 10px;
+}
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .navbar a {
+        margin-right: 30px;
+    }
+    .home-content h1 {
+        font-size: 36px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .home-content p {
+        font-size: 14px;
+    }
+    .home-img img{
+        width: 20%;
+        margin-right: 100%;
+    }
+    .about {
+        flex-direction: column;
+        padding: 5% 4%;
+        gap: 5em;
+    }
+    .about-img img {
+        width: 50%;
+    }
+    .skills-section .heading {
+        font-size: 2rem;
+    }
+    .skill-item {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .project-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 20px 10px;
+    }
+    .logo {
+        font-size: 22px;
+    }
+    .navbar a {
+        margin-right: 50px;
+    }
+    .home-content h1 {
+        font-size: 46px;
+    }
+    .home-content h3 {
+        font-size: 28px;
+    }
+    .home-img img{
+        width: 15%;
+    }
+    .about {
+        padding: 8% 6%;
+    }
+    .about-img img {
+        width: 40px;
+    }
+    .skills-section .heading {
+        font-size: 2.3rem;
+    }
+    .skill-item {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .project-box {
+        width: 45%;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+    .home-content h1 {
+        font-size: 56px;
+    }
+    .home-content h3 {
+        font-size: 32px;
+    }
+    .about-content h2 {
+        font-size: 42px;
+    }
+    .about-content h3 {
+        font-size: 50px;
+    }
+    .project h2 {
+        font-size: 50px;
+    }
+}
